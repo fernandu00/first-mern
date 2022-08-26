@@ -13,7 +13,7 @@ app.use(json());
 app.use(bodyParser.json());
 
 mongoose.connect(
-  DATABASE,
+  "mongodb+srv://fernandu:sudoaptget@cluster0.wk7dexp.mongodb.net/?retryWrites=true&w=majority",
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("connected to the DB");
