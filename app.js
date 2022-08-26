@@ -6,13 +6,14 @@ const mongoose = require("mongoose");
 const userModel = require("./models/user");
 const cors = require("cors");
 const bodyParser = require("body-parser");
+require("dotenv").config();
 
 app.use(cors());
 app.use(json());
 app.use(bodyParser.json());
 
 mongoose.connect(
-  "mongodb+srv://fernandu:sudoaptget@cluster0.wk7dexp.mongodb.net/?retryWrites=true&w=majority",
+  DATABASE,
   { useNewUrlParser: true, useUnifiedTopology: true },
   () => {
     console.log("connected to the DB");
