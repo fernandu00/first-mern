@@ -81,5 +81,5 @@ app.patch("/users/:id", async (req, res) => {
 const port = 3001;
 
 app.listen(process.env.PORT || port, () => {
-  console.log(`server running on port ${port}..`);
+  console.log(`server running on port ${port}...`);
 });
